@@ -1,0 +1,65 @@
+{
+  "name": "@mallet/ui",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Matt Christians",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "storybook": "start-storybook -p 9001",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@reach/portal": "^0.10.5",
+    "@reach/rect": "^0.10.5",
+    "@styled-system/css": "^5.1.5",
+    "@styled-system/should-forward-prop": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2",
+    "emotion-theming": "^10.0.27",
+    "framer-motion": "^1.11.1",
+    "prop-types": "15.7.2",
+    "react-icons": "^3.10.0",
+    "react-spinners": "^0.9.0",
+    "react-transition-group": "^4.4.1",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@storybook/addon-actions": "^6.0.0-beta.31",
+    "@storybook/addon-docs": "^6.0.0-beta.31",
+    "@storybook/addon-links": "^6.0.0-beta.31",
+    "@storybook/addons": "^6.0.0-beta.31",
+    "@storybook/react": "^6.0.0-beta.31",
+    "@styled-system/edit": "^5.1.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "prettier": "2.0.5",
+    "react-is": "^16.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

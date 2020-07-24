@@ -1,0 +1,237 @@
+import {
+  FaCheck,
+  FaChevronRight,
+  FaExternalLinkAlt,
+  FaRegGem,
+  FaRegSnowflake,
+} from 'react-icons/fa';
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Heading,
+} from '@storybook/addon-docs/blocks';
+import Button from './Button';
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+<Preview>
+  <Story name="overview">
+    <div className="btn-group">
+      <Button variant="default">Default</Button>
+      <Button variant="primary">Primary</Button>
+      <Button variant="primary" type="link">
+        Link
+      </Button>
+      <Button variant="primary" type="subtle">
+        Subtle
+      </Button>
+      <Button variant="primary" type="outline">
+        Outline
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Props</Heading>
+
+<Props of={Button} />
+
+<Heading>Variants</Heading>
+
+<Preview>
+  <Story name="variants">
+    <div className="btn-group">
+      <Button variant="default">Default</Button>
+      <Button variant="primary">Primary</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="success">Success</Button>
+      <Button variant="danger">Danger</Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Outlines</Heading>
+
+<Preview>
+  <Story name="outlines">
+    <div className="btn-group">
+      <Button variant="default" type="outline">
+        Default
+      </Button>
+      <Button variant="primary" type="outline">
+        Primary
+      </Button>
+      <Button variant="secondary" type="outline">
+        Secondary
+      </Button>
+      <Button variant="success" type="outline">
+        Success
+      </Button>
+      <Button variant="danger" type="outline">
+        Danger
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Subtles</Heading>
+
+<Preview>
+  <Story name="subtle">
+    <div className="btn-group">
+      <Button variant="default" type="subtle">
+        Default
+      </Button>
+      <Button variant="primary" type="subtle">
+        Primary
+      </Button>
+      <Button variant="secondary" type="subtle">
+        Secondary
+      </Button>
+      <Button variant="success" type="subtle">
+        Success
+      </Button>
+      <Button variant="danger" type="subtle">
+        Danger
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Links</Heading>
+
+<Preview>
+  <Story name="link">
+    <div className="btn-group">
+      <Button variant="default" type="link">
+        Default
+      </Button>
+      <Button variant="primary" type="link">
+        Primary
+      </Button>
+      <Button variant="secondary" type="link">
+        Secondary
+      </Button>
+      <Button variant="success" type="link">
+        Success
+      </Button>
+      <Button variant="danger" type="link">
+        Danger
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Sizes</Heading>
+
+<Preview>
+  <Story name="sizes">
+    <div className="btn-group">
+      <Button variant="primary" size="lg">
+        Large
+      </Button>
+      <Button variant="primary" size="md">
+        Medium
+      </Button>
+      <Button variant="primary" size="sm">
+        Small
+      </Button>
+      <Button variant="primary" size="xs">
+        Extra Small
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Icons</Heading>
+
+<Preview>
+  <Story name="icons">
+    <div className="btn-group">
+      <Button variant="default" iconLeft={<FaCheck />}>
+        Default
+      </Button>
+      <Button variant="primary" iconRight={<FaChevronRight />}>
+        Primary
+      </Button>
+      <Button variant="primary" type="link" iconLeft={<FaExternalLinkAlt />}>
+        Link
+      </Button>
+      <Button variant="primary" type="subtle" iconRight={<FaRegGem />}>
+        Subtle
+      </Button>
+      <Button variant="primary" type="outline" iconLeft={<FaRegSnowflake />}>
+        Outline
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Block</Heading>
+
+<Preview>
+  <Story name="block">
+    <div role="toolbar" className="btn-group-block">
+      <Button variant="primary" size="lg" isBlock type="outline">
+        Block
+      </Button>
+    </div>
+    <div role="toolbar" className="btn-group-block">
+      <Button variant="primary" size="lg" isBlock>
+        Block
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Disabled</Heading>
+
+<Preview>
+  <Story name="disabled">
+    <div className="btn-group">
+      <Button variant="default" isDisabled>
+        Default
+      </Button>
+      <Button variant="primary" isDisabled>
+        Primary
+      </Button>
+      <Button variant="primary" type="link" isDisabled>
+        Link
+      </Button>
+      <Button variant="primary" type="subtle" isDisabled>
+        Subtle
+      </Button>
+      <Button variant="primary" type="outline" isDisabled>
+        Outline
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Loading</Heading>
+
+<Preview>
+  <Story name="loading">
+    <div className="btn-group">
+      <Button variant="default" isLoading>
+        Default
+      </Button>
+      <Button variant="primary" isLoading>
+        Primary
+      </Button>
+      <Button variant="primary" type="link" isLoading>
+        Link
+      </Button>
+      <Button variant="primary" type="subtle" isLoading>
+        Subtle
+      </Button>
+      <Button variant="primary" type="outline" isLoading>
+        Outline
+      </Button>
+    </div>
+  </Story>
+</Preview>

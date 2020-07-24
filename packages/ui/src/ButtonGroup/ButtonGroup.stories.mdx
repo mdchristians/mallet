@@ -1,0 +1,82 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Heading,
+} from '@storybook/addon-docs/blocks';
+import ButtonGroup from './ButtonGroup';
+import Button from '../Button';
+
+<Meta title="ButtonGroup" component={ButtonGroup} />
+
+# ButtonGroup
+
+<Preview>
+  <Story name="overview">
+    <p>
+      The ButtonGroup component is composed of the `Box` component, so you'll be
+      able to pass any of those props as well.
+    </p>
+  </Story>
+</Preview>
+
+<Heading>Props</Heading>
+
+<Props of={ButtonGroup} />
+
+<Heading>Horizontal</Heading>
+
+<Preview>
+  <Story name="horizontal">
+    <ButtonGroup>
+      <Button variant="default">One</Button>
+      <Button variant="default">Two</Button>
+      <Button variant="default">Three</Button>
+      <Button variant="default">Four</Button>
+      <Button variant="default">Five</Button>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+<Heading>Vertical</Heading>
+
+<Preview>
+  <Story name="vertical">
+    <ButtonGroup isVertical>
+      <Button variant="default">One</Button>
+      <Button variant="default">Two</Button>
+      <Button variant="default">Three</Button>
+      <Button variant="default">Four</Button>
+      <Button variant="default">Five</Button>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+<Heading>Horizontal Block</Heading>
+
+<Preview>
+  <Story name="horizontal block">
+    <ButtonGroup isBlock>
+      <Button variant="default">One</Button>
+      <Button variant="default">Two</Button>
+      <Button variant="default">Three</Button>
+      <Button variant="default">Four</Button>
+      <Button variant="default">Five</Button>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+<Heading>Vertical Block</Heading>
+
+<Preview>
+  <Story name="vertical block">
+    <ButtonGroup isVertical isBlock>
+      <Button variant="default">One</Button>
+      <Button variant="default">Two</Button>
+      <Button variant="default">Three</Button>
+      <Button variant="default">Four</Button>
+      <Button variant="default">Five</Button>
+    </ButtonGroup>
+  </Story>
+</Preview>

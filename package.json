@@ -1,0 +1,17 @@
+{
+  "name": "mallet",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "storybook": "yarn workspace @mallet/ui storybook"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "2.0.5"
+  }
+}

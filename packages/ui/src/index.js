@@ -8,4 +8,5 @@ export { default as Icon } from './Icon';
 export { default as IconButton } from './IconButton';
 export { default as MalletTheme } from './MalletTheme';
 export { MalletProvider, useTheme } from './MalletProvider';
+export * from './Tabs';
 export * from './utils';

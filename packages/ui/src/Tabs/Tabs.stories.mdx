@@ -1,0 +1,71 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Heading,
+} from '@storybook/addon-docs/blocks';
+import { Tabs, Tab } from './';
+import Box from '../Box';
+
+<Meta title="Tabs" component={Tabs} />
+
+# Tabs
+
+<Heading>Props</Heading>
+
+### Tabs
+
+<Props of={Tabs} />
+
+### Tab
+
+<Props of={Tab} />
+
+<Heading>Basic</Heading>
+
+<Preview>
+  <Story name="Basic">
+    <Tabs>
+      <Tab label="First">
+        <Box>First Panel</Box>
+      </Tab>
+      <Tab label="Second">
+        <Box>Second Panel</Box>
+      </Tab>
+      <Tab label="Third">
+        <Box>Third Panel</Box>
+      </Tab>
+      <Tab label="Fourth">
+        <Box>Fourth Panel</Box>
+      </Tab>
+      <Tab label="Fifth">
+        <Box>Fifth Panel</Box>
+      </Tab>
+    </Tabs>
+  </Story>
+</Preview>
+
+<Heading>Vertical</Heading>
+
+<Preview>
+  <Story name="Vertical">
+    <Tabs orientation="vertical">
+      <Tab label="First">
+        <Box>First Panel</Box>
+      </Tab>
+      <Tab label="Second">
+        <Box>Second Panel</Box>
+      </Tab>
+      <Tab label="Third">
+        <Box>Third Panel</Box>
+      </Tab>
+      <Tab label="Fourth">
+        <Box>Fourth Panel</Box>
+      </Tab>
+      <Tab label="Fifth">
+        <Box>Fifth Panel</Box>
+      </Tab>
+    </Tabs>
+  </Story>
+</Preview>

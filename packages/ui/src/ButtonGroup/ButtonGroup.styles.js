@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import shouldForwardProp from '@styled-system/should-forward-prop';
 import { css } from '@emotion/core';
-import { Box } from '../';
+import Flex from '../Flex';
 
 const blockHorizontal = css`
   > *:first-of-type:not(:last-of-type) {
@@ -46,9 +46,10 @@ const vertical = css`
   }
 `;
 
-export const StyledButtonGroup = styled(Box, { shouldForwardProp })`
+export const StyledButtonGroup = styled(Flex, { shouldForwardProp })`
   display: inline-flex;
   height: min-content;
+  list-style: none;
 
   ${(props) => props.isBlock && !props.isVertical && blockHorizontal}
   ${(props) => props.isBlock && props.isVertical && blockVertical}

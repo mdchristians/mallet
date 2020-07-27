@@ -4,7 +4,7 @@ import { StyledButtonGroup } from './ButtonGroup.styles';
 import { defaultContextProps, ButtonGroupContext } from './ButtonGroup.context';
 
 const ButtonGroup = React.forwardRef(
-  ({ isBlock, isVertical, children, ...props }, ref) => {
+  ({ isBlock, isVertical, role, children, ...props }, ref) => {
     const initProps = React.useMemo(
       () => ({
         isBlock,
@@ -15,7 +15,7 @@ const ButtonGroup = React.forwardRef(
 
     return (
       <ButtonGroupContext.Provider value={initProps}>
-        <StyledButtonGroup ref={ref} role="group" {...initProps} {...props}>
+        <StyledButtonGroup ref={ref} role={role} {...initProps} {...props}>
           {children}
         </StyledButtonGroup>
       </ButtonGroupContext.Provider>
@@ -28,6 +28,7 @@ ButtonGroup.defaultProps = {
 };
 
 ButtonGroup.propTypes = {
+  role: PropTypes.string,
   isBlock: PropTypes.bool,
   isVertical: PropTypes.bool,
 };

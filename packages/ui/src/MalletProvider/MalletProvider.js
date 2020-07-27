@@ -6,17 +6,14 @@ import {
 } from 'emotion-theming';
 import CSSReset from '../CSSReset';
 import MalletTheme from '../MalletTheme';
-import { ToasterProvider } from '../Toaster';
 
 const MalletProvider = (props) => {
   const { children, theme = MalletTheme, useReset } = props;
 
   return (
     <EmotionThemeProvider theme={theme}>
-      <ToasterProvider>
-        {useReset && <CSSReset />}
-        {children}
-      </ToasterProvider>
+      {useReset && <CSSReset />}
+      {children}
     </EmotionThemeProvider>
   );
 };

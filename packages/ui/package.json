@@ -32,7 +32,6 @@
     "prop-types": "15.7.2",
     "react-icons": "^3.10.0",
     "react-spinners": "^0.9.0",
-    "react-transition-group": "^4.4.1",
     "styled-system": "^5.1.5"
   },
   "devDependencies": {

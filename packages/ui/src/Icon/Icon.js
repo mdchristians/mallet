@@ -32,8 +32,8 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   role: PropTypes.string,
-  focusable: PropTypes.string,
-  color: PropTypes.bool,
+  focusable: PropTypes.bool,
+  color: PropTypes.string,
   size: PropTypes.string,
 };
 

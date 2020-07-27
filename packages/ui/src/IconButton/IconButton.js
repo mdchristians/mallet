@@ -28,7 +28,7 @@ IconButton.defaultProps = {
 };
 
 IconButton.propTypes = {
-  icon: PropTypes.element.isRequired,
+  icon: PropTypes.func.isRequired,
   variant: PropTypes.oneOf([
     'default',
     'primary',

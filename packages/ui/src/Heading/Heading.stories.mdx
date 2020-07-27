@@ -1,0 +1,53 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Heading as SBHeading,
+} from '@storybook/addon-docs/blocks';
+import Heading from './Heading';
+
+<Meta title="Heading" component={Heading} />
+
+# Heading
+
+<SBHeading>Props</SBHeading>
+
+<Props of={Heading} />
+
+<SBHeading>As</SBHeading>
+
+<Preview>
+  <Story name="As">
+    <div className="column-group--5">
+      <Heading as="h1">I have a "h1" "as" prop type</Heading>
+      <Heading as="h2">I have a "h2" "as" prop type</Heading>
+      <Heading as="h3">I have a "h3" "as" prop type</Heading>
+      <Heading as="h4">I have a "h4" "as" prop type</Heading>
+      <Heading as="h5">I have a "h5" "as" prop type</Heading>
+      <Heading as="h6">I have a "h6" "as" prop type</Heading>
+    </div>
+  </Story>
+</Preview>
+
+<SBHeading>Colors</SBHeading>
+
+<Preview>
+  <Story name="Colors">
+    <div className="column-group--5">
+      <Heading color="text">I have a "text" color</Heading>
+      <Heading color="primary">I have a "primary" color</Heading>
+      <Heading color="secondary.light">
+        I have a "secondary.light" color
+      </Heading>
+      <Heading color="info.dark">I have a "info.dark" color</Heading>
+      <Heading color="success">I have a "success" color</Heading>
+      <Heading color="warn">I have a "warn" color</Heading>
+      <Heading color="danger">I have a "danger" color</Heading>
+      <Heading color="pink">I have a "pink" color</Heading>
+      <Heading color="pink.5">I have a "pink.5" color</Heading>
+      <Heading color="#ddd">I have a "#ddd" color</Heading>
+      <Heading color="rebeccapurple">I have a "rebeccapurple" color</Heading>
+    </div>
+  </Story>
+</Preview>

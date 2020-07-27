@@ -1,0 +1,86 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Heading,
+} from '@storybook/addon-docs/blocks';
+import Text from './Text';
+
+<Meta title="Text" component={Text} />
+
+# Text
+
+<Heading>Props</Heading>
+
+<Props of={Text} />
+
+<Heading>Sizes</Heading>
+
+<Preview>
+  <Story name="Sizes">
+    <div className="column-group--5">
+      <Text size="xs">I have a "xs" size</Text>
+      <Text size="sm">I have a "sm" size</Text>
+      <Text size="md">I have a "md" size</Text>
+      <Text size="lg">I have a "lg" size</Text>
+      <Text size="xl">I have a "xl" size</Text>
+      <Text size="2xl">I have a "2xl" size</Text>
+      <Text size="3xl">I have a "3xl" size</Text>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Colors</Heading>
+
+<Preview>
+  <Story name="Colors">
+    <div className="column-group--5">
+      <Text color="text">I have a "text" color</Text>
+      <Text color="primary">I have a "primary" color</Text>
+      <Text color="secondary.light">I have a "secondary.light" color</Text>
+      <Text color="info.dark">I have a "info.dark" color</Text>
+      <Text color="success">I have a "success" color</Text>
+      <Text color="warn">I have a "warn" color</Text>
+      <Text color="danger">I have a "danger" color</Text>
+      <Text color="pink">I have a "pink" color</Text>
+      <Text color="pink.5">I have a "pink.5" color</Text>
+      <Text color="#ddd">I have a "#ddd" color</Text>
+      <Text color="rebeccapurple">I have a "rebeccapurple" color</Text>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>As</Heading>
+
+<Preview>
+  <Story name="As">
+    <div className="column-group--5">
+      <Text as="i">Italic (as "i") </Text>
+      <br />
+      <Text as="u">Underline (as "u") </Text>
+      <br />
+      <Text as="abbr">I18N (as "abbr") </Text>
+      <br />
+      <Text as="cite">Citation (as "cite") </Text>
+      <br />
+      <Text as="del">Deleted (as "del") </Text>
+      <br />
+      <Text as="em">Emphasis (as "em") </Text>
+      <br />
+      <Text as="ins">Inserted (as "ins") </Text>
+      <br />
+      <Text as="kbd">Ctrl + C (as "kbd") </Text>
+      <br />
+      <Text as="mark">Highlighted (as "mark") </Text>
+      <br />
+      <Text as="s">Strikethrough (as "s") </Text>
+      <br />
+      <Text as="samp">Sample (as "samp") </Text>
+      <br />
+      <Text as="sub">sub (as "sub") </Text>
+      <br />
+      <Text as="sup">sup</Text>
+    </div>
+  </Story>
+</Preview>

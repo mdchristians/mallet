@@ -1,0 +1,63 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Heading,
+} from '@storybook/addon-docs/blocks';
+import Notification from './Notification';
+
+<Meta title="Notifications" component={Notification} />
+
+# Notification
+
+<Preview>
+  <Story name="overview">
+    <Notification
+      title="Congratulations!"
+      description="You are our 100 caller! Please leave a message after the beeeeeep"
+    />
+  </Story>
+</Preview>
+
+<Heading>Props</Heading>
+
+<Props of={Notification} />
+
+<Heading>Variants</Heading>
+
+<Preview>
+  <Story name="variants">
+    <div className="column-group">
+      <Notification
+        title="Default (info)"
+        description="You are our 100 caller! Please leave a message after the beeeeeep"
+      />
+      <Notification
+        variant="primary"
+        title="Primary"
+        description="You are our 100 caller! Please leave a message after the beeeeeep"
+      />
+      <Notification
+        variant="secondary"
+        title="Secondary"
+        description="You are our 100 caller! Please leave a message after the beeeeeep"
+      />
+      <Notification
+        variant="success"
+        title="Success"
+        description="You are our 100 caller! Please leave a message after the beeeeeep"
+      />
+      <Notification
+        variant="warn"
+        title="Warn"
+        description="You are our 100 caller! Please leave a message after the beeeeeep"
+      />
+      <Notification
+        variant="danger"
+        title="Danger"
+        description="You are our 100 caller! Please leave a message after the beeeeeep"
+      />
+    </div>
+  </Story>
+</Preview>

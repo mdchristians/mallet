@@ -1,0 +1,21 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Heading,
+} from '@storybook/addon-docs/blocks';
+import Button from '../Button';
+import Box from '../Box';
+import BaseToast from './examples/BaseToast';
+import { useToast } from './ToasterProvider.js';
+
+<Meta title="Toast" component={BaseToast} />
+
+# Toast
+
+<Preview>
+  <Story name="overview">
+    <BaseToast />
+  </Story>
+</Preview>

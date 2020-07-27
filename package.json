@@ -8,7 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "storybook": "yarn workspace @mallet/ui storybook"
+    "storybook": "yarn workspace @mallet/ui storybook",
+    "build-storybook": "yarn workspace @mallet/ui build-storybook"
   },
   "devDependencies": {
     "lerna": "^3.22.1",

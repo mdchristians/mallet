@@ -17,7 +17,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "storybook": "start-storybook -p 9001",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook --docs"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
